@@ -1,0 +1,59 @@
+body {
+  background: #2b1f1f;
+  color: #fff;
+  font-family: 'Creepster', cursive;
+  overflow: hidden;
+}
+
+#chef {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 150px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.utensil {
+  position: absolute;
+  width: 40px;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(2); }
+  100% { filter: brightness(1); }
+}
+
+.steam {
+  position: absolute;
+  top: 60%;
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  animation: rise 3s ease-out;
+}
+
+@keyframes rise {
+  0% { transform: translateY(0); opacity: 0.5; }
+  100% { transform: translateY(-100px); opacity: 0; }
+}
+
+#blood-drip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('assets/media/blood-drip.gif') repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+  pointer-events: none;
+}
+
+.jar, .recipe {
+  position: absolute;
+  width: 80px;
+}

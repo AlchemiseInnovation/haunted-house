@@ -1,0 +1,38 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Creepster', cursive;
+  transition: background 0.5s ease;
+}
+
+body.dark {
+  background: #111;
+}
+
+#timer {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.entity {
+  position: absolute;
+  width: 60px;
+  animation: float 4s infinite ease-in-out;
+}
+
+#scary-girl {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}

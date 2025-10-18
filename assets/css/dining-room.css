@@ -1,0 +1,29 @@
+body {
+  background: #1a0f0f;
+  color: #fff;
+  font-family: 'Creepster', cursive;
+  overflow: hidden;
+}
+
+#riddle-gate {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#dining-room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feast-item, .guest, .utensil {
+  width: 100px;
+  margin: 10px;
+  animation: twitch 3s infinite ease-in-out;
+}
+
+@keyframes twitch {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
